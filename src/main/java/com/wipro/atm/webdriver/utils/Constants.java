@@ -30,7 +30,7 @@ public class Constants {
     public static final String OUTLOOK_URL = "https://outlook.office.com/owa/?realm=wipro.com";
     public static final String OUTLOOK_LOGINEMAIL = "KU395948@wipro.com";
     public static final String OUTLOOK_EMAIL = "kumar.saurav7";
-    public static final String OUTLOOK_PASSWORD = "Feb@1234590$";
+    public static final String OUTLOOK_PASSWORD = "fghfgjh";
     public static final String MessageSubject = "Subject for the mail";
     public static final String MessageBody = "Message to be sent to verify it has been sent successfully or not";
     public static final int NO_OF_EXEC = 1;
