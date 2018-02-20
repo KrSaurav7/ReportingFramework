@@ -1,0 +1,5 @@
+com\wipro\atm\webdriver\tests\ExtentReportBaseClass.class
+com\wipro\atm\webdriver\tests\ExtentReportsClass.class
+com\wipro\atm\webdriver\tests\RegistrationAndAddToCart.class
+com\wipro\atm\webdriver\tests\SendEmailAndVerify.class
+com\wipro\atm\webdriver\tests\OrderHistory.class

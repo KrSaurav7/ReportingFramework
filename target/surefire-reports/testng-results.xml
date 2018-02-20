@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OpenCart Suite" duration-ms="18606" started-at="2018-02-20T04:50:19Z" finished-at="2018-02-20T04:50:38Z">
+    <groups>
+    </groups>
+    <test name="OpenCart Tests" duration-ms="18606" started-at="2018-02-20T04:50:19Z" finished-at="2018-02-20T04:50:38Z">
+      <class name="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart">
+        <test-method status="PASS" signature="initializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="initializeExtentReport" is-config="true" duration-ms="151" started-at="2018-02-20T10:20:19Z" finished-at="2018-02-20T10:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeExtentReport -->
+        <test-method status="PASS" signature="startBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="startBrowserTest" is-config="true" duration-ms="1966" started-at="2018-02-20T10:20:19Z" description="Start browser" finished-at="2018-02-20T10:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowserTest -->
+        <test-method status="PASS" signature="proceedForRegistrationTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="proceedForRegistrationTest" duration-ms="680" started-at="2018-02-20T10:20:21Z" description="Proceeding for new registration by clicking on create new account" finished-at="2018-02-20T10:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedForRegistrationTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T10:20:22Z" finished-at="2018-02-20T10:20:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=proceedForRegistrationTest status=SUCCESS method=RegistrationAndAddToCart.proceedForRegistrationTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setNewUserDetailsTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="setNewUserDetailsTest" duration-ms="3036" started-at="2018-02-20T10:20:22Z" description="Provide all mandatory new user details" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.proceedForRegistrationTest" finished-at="2018-02-20T10:20:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNewUserDetailsTest -->
+        <test-method status="PASS" signature="navigateToHomePageTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="navigateToHomePageTest" duration-ms="649" started-at="2018-02-20T10:20:26Z" description="Navigate to the Home page" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.setNewUserDetailsTest" finished-at="2018-02-20T10:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePageTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T10:20:26Z" finished-at="2018-02-20T10:20:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=setNewUserDetailsTest status=SUCCESS method=RegistrationAndAddToCart.setNewUserDetailsTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T10:20:27Z" finished-at="2018-02-20T10:20:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToHomePageTest status=SUCCESS method=RegistrationAndAddToCart.navigateToHomePageTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="navigateToCommingSoonProductTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="navigateToCommingSoonProductTest" duration-ms="1506" started-at="2018-02-20T10:20:27Z" description="Navigate to auto populated adv. product details page" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.navigateToHomePageTest" finished-at="2018-02-20T10:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCommingSoonProductTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-20T10:20:29Z" finished-at="2018-02-20T10:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToCommingSoonProductTest status=SUCCESS method=RegistrationAndAddToCart.navigateToCommingSoonProductTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="addProductToTheWishListTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="addProductToTheWishListTest" duration-ms="1645" started-at="2018-02-20T10:20:29Z" description="Add product to the wish list" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.navigateToCommingSoonProductTest" finished-at="2018-02-20T10:20:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToTheWishListTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-20T10:20:31Z" finished-at="2018-02-20T10:20:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addProductToTheWishListTest status=SUCCESS method=RegistrationAndAddToCart.addProductToTheWishListTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="addProductToTheCartTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="addProductToTheCartTest" duration-ms="1362" started-at="2018-02-20T10:20:31Z" description="Add product to the cart and update the price" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.addProductToTheWishListTest" finished-at="2018-02-20T10:20:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToTheCartTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-20T10:20:33Z" finished-at="2018-02-20T10:20:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addProductToTheCartTest status=SUCCESS method=RegistrationAndAddToCart.addProductToTheCartTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="removeProductFromWishListTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="removeProductFromWishListTest" duration-ms="1249" started-at="2018-02-20T10:20:33Z" description="Remove product from wish list" depends-on-methods="com.wipro.atm.webdriver.tests.RegistrationAndAddToCart.addProductToTheCartTest" finished-at="2018-02-20T10:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromWishListTest -->
+        <test-method status="PASS" signature="stopBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="stopBrowserTest" is-config="true" duration-ms="3288" started-at="2018-02-20T10:20:34Z" description="Logout" finished-at="2018-02-20T10:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowserTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T10:20:34Z" finished-at="2018-02-20T10:20:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeProductFromWishListTest status=SUCCESS method=RegistrationAndAddToCart.removeProductFromWishListTest()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="deinitializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.RegistrationAndAddToCart@353352b6]" name="deinitializeExtentReport" is-config="true" duration-ms="656" started-at="2018-02-20T10:20:38Z" finished-at="2018-02-20T10:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deinitializeExtentReport -->
+      </class> <!-- com.wipro.atm.webdriver.tests.RegistrationAndAddToCart -->
+    </test> <!-- OpenCart Tests -->
+  </suite> <!-- OpenCart Suite -->
+</testng-results>

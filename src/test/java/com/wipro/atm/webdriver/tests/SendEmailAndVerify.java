@@ -6,24 +6,29 @@ import com.wipro.atm.webdriver.model.User;
 import com.wipro.atm.webdriver.pages.*;
 import com.wipro.atm.webdriver.utils.Constants;
 import com.wipro.atm.webdriver.utils.CustomTestListener;
+import com.wipro.atm.webdriver.utils.TestDataReader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import java.util.LinkedHashMap;
 import java.util.concurrent.TimeUnit;
 
 @Listeners(CustomTestListener.class)
-public class SendEmailAndVerify extends ExtentReportBaseClass {
+public class SendEmailAndVerify extends ExtentReportBaseClass{
     Logger logger = LogManager.getRootLogger();
     private WebDriver driver;
     private OutlookStartPage outlookStartPage;
     private OutlookSignInPage outlookSignInPage;
     private OutlookComposeMailPage outlookComposeMailPage;
+    public static TestDataReader dataReader = new TestDataReader();	
+	LinkedHashMap<String, String> dataMap = new LinkedHashMap<String, String>();
 
     /**
-     * below method will start the browser based on the browser preferance
+     * below method will start the browser based on the browser preference
      */
 
     @BeforeClass(description = "Start browser")
@@ -44,12 +49,23 @@ public class SendEmailAndVerify extends ExtentReportBaseClass {
     public void loginToOutlookTest() {
         extentLogger = extent.startTest("loginToOutlookTest");
         outlookSignInPage = new OutlookSignInPage(driver);
-        User user = new User(Constants.OUTLOOK_LOGINEMAIL, Constants.OUTLOOK_PASSWORD);
+        try{
+        dataMap= dataReader.getEntityData(this.getClass().getSimpleName(),"Login");
+    	String outlookUN = dataMap.get("UserName");
+    	System.out.println("test is " + outlookUN );
+    	String outlookPwd = dataMap.get("Pwd");
+        User user = new User(outlookUN, outlookPwd);
         outlookSignInPage.loginToOutlook(user);
         Assert.assertTrue(outlookSignInPage.isElementDisplayed());
         logger.info("User has successfully login to outlook");
         extentLogger.log(LogStatus.INFO,"User has successfully login to outlook");
         extentLogger.log(LogStatus.PASS, "Test Case (loginToOutlookTest) is Passed");
+        }
+        catch(Exception e)
+    	{
+        extentLogger.log(LogStatus.ERROR, "Failed to read Excel file");
+    	logger.error(e.getMessage());
+    	}
     }
 
     /**
@@ -60,10 +76,22 @@ public class SendEmailAndVerify extends ExtentReportBaseClass {
     public void composeANewEmailAndSendTest() {
         extentLogger = extent.startTest("composeANewEmailAndSendTest");
         outlookComposeMailPage = new OutlookComposeMailPage(driver);
-        outlookComposeMailPage.composeANewEmailAndSend(Constants.OUTLOOK_EMAIL, Constants.MessageSubject, Constants.MessageBody);
+        try
+        {
+        dataMap= dataReader.getEntityData(this.getClass().getSimpleName(),"EmailDetails");	
+        String outlookEmailTo = dataMap.get("EmailTo");
+    	String outlookEmailSub = dataMap.get("EmailSubject");
+    	String outlookEmailBody = dataMap.get("EmailBody");
+        outlookComposeMailPage.composeANewEmailAndSend(outlookEmailTo, outlookEmailSub, outlookEmailBody);
         logger.info("Email has been composed and has been sent successfully ");
         extentLogger.log(LogStatus.INFO,"Email has been composed and has been sent successfully");
         extentLogger.log(LogStatus.PASS, "Test Case (composeANewEmailAndSendTest) is Passed");
+    }
+        catch(Exception e)
+	{
+        	extentLogger.log(LogStatus.ERROR, "Failed to read Excel file");
+         	logger.error(e.getMessage());
+	}
     }
 
     /**
@@ -73,10 +101,21 @@ public class SendEmailAndVerify extends ExtentReportBaseClass {
     @Test(dependsOnMethods = "composeANewEmailAndSendTest", description = "search email and delete the same")
     public void searchAndDeleteEmailTest() {
         extentLogger = extent.startTest("searchAndDeleteEmailTest");
-        outlookComposeMailPage.searchAndDeleteEmail(Constants.MessageSubject);
+        try
+        {
+        dataMap= dataReader.getEntityData(this.getClass().getSimpleName(),"EmailDetails");	
+    	String outlookEmailSub = dataMap.get("EmailSubject");
+    	String outlookEmailBody = dataMap.get("EmailBody");
+        outlookComposeMailPage.searchAndDeleteEmail(outlookEmailSub,outlookEmailBody);
         logger.info("Email has been received successfully and deleted after verification ");
         extentLogger.log(LogStatus.INFO,"Email has been received successfully and deleted after verification ");
         extentLogger.log(LogStatus.PASS, "Test Case (searchAndDeleteEmailTest) is Passed");
+        }
+        catch(Exception e)
+	{
+        	extentLogger.log(LogStatus.ERROR, "Failed to read Excel file");
+         	logger.error(e.getMessage());
+	}
     }
 
     /**

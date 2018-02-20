@@ -17,7 +17,10 @@ public class Driver {
 			} else if ("firefox".equalsIgnoreCase(browser)) {
 				WebDriverCreator creator = new FirfoxDriverCreator();
 				driver = creator.factoryMethod();				
-			}
+			}else if ("IE".equalsIgnoreCase(browser)){
+                IEDriverCreator creator = new IEDriverCreator();
+                driver = creator.factoryMethod();
+            }
 		}
 		return driver;
 	}

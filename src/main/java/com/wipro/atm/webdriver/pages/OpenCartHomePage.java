@@ -1,8 +1,6 @@
 package com.wipro.atm.webdriver.pages;
 
 
-import com.wipro.atm.webdriver.utils.BaseUtility;
-import com.wipro.atm.webdriver.utils.Constants;
 import com.wipro.atm.webdriver.utils.WaitForElements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

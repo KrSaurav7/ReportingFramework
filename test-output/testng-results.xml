@@ -2,69 +2,69 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="My Test Suite" duration-ms="103153" started-at="2018-02-07T14:19:03Z" finished-at="2018-02-07T14:20:46Z">
+  <suite name="My Test Suite" duration-ms="102324" started-at="2018-02-20T05:48:09Z" finished-at="2018-02-20T05:49:52Z">
     <groups>
     </groups>
-    <test name="Practice Tests" duration-ms="103153" started-at="2018-02-07T14:19:03Z" finished-at="2018-02-07T14:20:46Z">
+    <test name="Practice Tests" duration-ms="102324" started-at="2018-02-20T05:48:09Z" finished-at="2018-02-20T05:49:52Z">
       <class name="com.wipro.atm.webdriver.tests.SendEmailAndVerify">
-        <test-method status="PASS" signature="initializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="initializeExtentReport" is-config="true" duration-ms="237" started-at="2018-02-07T19:49:03Z" finished-at="2018-02-07T19:49:03Z">
+        <test-method status="PASS" signature="initializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="initializeExtentReport" is-config="true" duration-ms="563" started-at="2018-02-20T11:18:09Z" finished-at="2018-02-20T11:18:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeExtentReport -->
-        <test-method status="PASS" signature="startBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="startBrowserTest" is-config="true" duration-ms="3927" started-at="2018-02-07T19:49:03Z" description="Start browser" finished-at="2018-02-07T19:49:07Z">
+        <test-method status="PASS" signature="startBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="startBrowserTest" is-config="true" duration-ms="3080" started-at="2018-02-20T11:18:09Z" description="Start browser" finished-at="2018-02-20T11:18:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowserTest -->
-        <test-method status="PASS" signature="loginToOutlookTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="loginToOutlookTest" duration-ms="10267" started-at="2018-02-07T19:49:07Z" description="Login to outlook application" finished-at="2018-02-07T19:49:18Z">
+        <test-method status="PASS" signature="loginToOutlookTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="loginToOutlookTest" duration-ms="9396" started-at="2018-02-20T11:18:12Z" description="Login to outlook application" finished-at="2018-02-20T11:18:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToOutlookTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="getResult" is-config="true" duration-ms="7" started-at="2018-02-07T19:49:19Z" finished-at="2018-02-07T19:49:19Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="getResult" is-config="true" duration-ms="5" started-at="2018-02-20T11:18:22Z" finished-at="2018-02-20T11:18:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToOutlookTest status=SUCCESS method=SendEmailAndVerify.loginToOutlookTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146] output={null}]]]>
+                <![CDATA[[TestResult name=loginToOutlookTest status=SUCCESS method=SendEmailAndVerify.loginToOutlookTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="composeANewEmailAndSendTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="composeANewEmailAndSendTest" duration-ms="42090" started-at="2018-02-07T19:49:19Z" description="Compose a new email" depends-on-methods="com.wipro.atm.webdriver.tests.SendEmailAndVerify.loginToOutlookTest" finished-at="2018-02-07T19:50:01Z">
+        <test-method status="PASS" signature="composeANewEmailAndSendTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="composeANewEmailAndSendTest" duration-ms="44401" started-at="2018-02-20T11:18:22Z" description="Compose a new email" depends-on-methods="com.wipro.atm.webdriver.tests.SendEmailAndVerify.loginToOutlookTest" finished-at="2018-02-20T11:19:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeANewEmailAndSendTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-07T19:50:01Z" finished-at="2018-02-07T19:50:01Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T11:19:07Z" finished-at="2018-02-20T11:19:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composeANewEmailAndSendTest status=SUCCESS method=SendEmailAndVerify.composeANewEmailAndSendTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146] output={null}]]]>
+                <![CDATA[[TestResult name=composeANewEmailAndSendTest status=SUCCESS method=SendEmailAndVerify.composeANewEmailAndSendTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="searchAndDeleteEmailTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="searchAndDeleteEmailTest" duration-ms="37712" started-at="2018-02-07T19:50:01Z" description="search email and delete the same" depends-on-methods="com.wipro.atm.webdriver.tests.SendEmailAndVerify.composeANewEmailAndSendTest" finished-at="2018-02-07T19:50:39Z">
+        <test-method status="PASS" signature="searchAndDeleteEmailTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="searchAndDeleteEmailTest" duration-ms="34585" started-at="2018-02-20T11:19:07Z" description="search email and delete the same" depends-on-methods="com.wipro.atm.webdriver.tests.SendEmailAndVerify.composeANewEmailAndSendTest" finished-at="2018-02-20T11:19:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAndDeleteEmailTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-07T19:50:39Z" finished-at="2018-02-07T19:50:39Z">
+        <test-method status="PASS" signature="stopBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="stopBrowserTest" is-config="true" duration-ms="9653" started-at="2018-02-20T11:19:42Z" description="Logout" finished-at="2018-02-20T11:19:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowserTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-20T11:19:42Z" finished-at="2018-02-20T11:19:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchAndDeleteEmailTest status=SUCCESS method=SendEmailAndVerify.searchAndDeleteEmailTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146] output={null}]]]>
+                <![CDATA[[TestResult name=searchAndDeleteEmailTest status=SUCCESS method=SendEmailAndVerify.searchAndDeleteEmailTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="stopBrowserTest()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="stopBrowserTest" is-config="true" duration-ms="7073" started-at="2018-02-07T19:50:39Z" description="Logout" finished-at="2018-02-07T19:50:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopBrowserTest -->
-        <test-method status="PASS" signature="deinitializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@5fbe4146]" name="deinitializeExtentReport" is-config="true" duration-ms="766" started-at="2018-02-07T19:50:47Z" finished-at="2018-02-07T19:50:47Z">
+        <test-method status="PASS" signature="deinitializeExtentReport()[pri:0, instance:com.wipro.atm.webdriver.tests.SendEmailAndVerify@1f9f6368]" name="deinitializeExtentReport" is-config="true" duration-ms="344" started-at="2018-02-20T11:19:52Z" finished-at="2018-02-20T11:19:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deinitializeExtentReport -->
